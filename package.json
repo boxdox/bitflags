@@ -1,0 +1,35 @@
+{
+  "name": "@boxdox/bitflags",
+  "version": "0.0.1",
+  "description": "a type-safe, dependency-free bit-flag library",
+  "keywords": [
+    "bitflags",
+    "typescript"
+  ],
+  "homepage": "https://github.com/boxdox/bitflags",
+  "bugs": {
+    "url": "https://github.com/boxdox/bitflags/issues"
+  },
+  "author": "boxdox <hi@boxdox.dev>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/boxdox/bitflags.git"
+  },
+  "module": "index.ts",
+  "type": "module",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --dts --sourcemap --format esm,cjs --minify",
+    "dev": "bun run src/index.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "prettier": "^3.6.2",
+    "tsup": "^8.5.0",
+    "typescript": "^5"
+  }
+}
